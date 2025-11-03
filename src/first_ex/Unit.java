@@ -1,3 +1,5 @@
+package first_ex;
+
 public class Unit {
     private String name;
     private String type;     // infantry, artillery, recon, etc.

@@ -1,3 +1,5 @@
+package first_ex;
+
 import java.util.*;
 import java.util.function.*;
 
@@ -30,7 +32,6 @@ public class BattleEfficiencyAnalyzer {
         return sum / units.size();
     }
 
-    // 4. Виконання дії над усіма об’єктами
     public static void actOnUnits(List<Unit> units, Consumer<Unit> action) {
         for (Unit unit : units) {
             action.accept(unit);
