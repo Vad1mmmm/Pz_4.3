@@ -17,15 +17,17 @@ public class Demonstration {
             choise = scanner.nextInt();
         }
         catch (InputMismatchException e) {
-            System.out.println(" ");
+            scanner.nextLine();
         }
         switch (choise) {
             case 1 -> {
+                System.out.println("==============first ex==============");
                 Main.mainFirst();
                 pressToContinue();
                 startDemonstration();
             }
             case 2 -> {
+                System.out.println("==============second ex=============");
                 mainSoldier.mainStart();
                 pressToContinue();
                 startDemonstration();
@@ -34,7 +36,7 @@ public class Demonstration {
                 System.out.println("Гарного дня)");
             }
             default -> {
-                System.out.println("Не правильний вибір!");
+                System.out.println("\nНе правильний вибір!");
                 startDemonstration();
             }
 
